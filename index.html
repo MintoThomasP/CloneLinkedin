@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="nav-left">
+                <img src="assets/images/logo.png" class="logo" alt="">
+                <div class="search-box">
+                    <img src="assets/images/search.png" alt="">
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="nav-right">
+                <ul class="left-menu">
+                    <li class="active">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path
+                                    d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z">
+                                </path>
+                            </svg>
+                        </div>
+                        <label>Home</label>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path
+                                    d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="noti">35</span>
+                        <label>My Network</label>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path
+                                    d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                                </path>
+                            </svg>
+                        </div>
+                        <label>Jobs</label>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path
+                                    d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="noti">1</span>
+                        <label>Messages</label>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path
+                                    d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span class="noti">5</span>
+                        <label>Notifications</label>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="assets/images/user1.jpeg" class="user-icon" alt="">
+                        </div>
+                        <label>Me <i class="fa fa-caret-down"></i></label>
+                    </li>
+                </ul>
+                <div class="vertical-divider"></div>
+                <ul class="right-menu">
+                    <li>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                                <path
+                                    d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <label>For Business <i class="fa fa-caret-down"></i></label>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                fill="currentColor" width="24" height="24" focusable="false">
+                                <circle cx="12" cy="4" r="2" style="isolation:isolate" opacity=".75"></circle>
+                                <path
+                                    d="M21 10H3a1 1 0 00-1 1v10a1 1 0 001 1h18a1 1 0 001-1V11a1 1 0 00-1-1zm-5 9H8v-2h8v2zm2-4H6v-2h12v2z">
+                                </path>
+                                <g opacity=".6">
+                                    <path
+                                        d="M9.57 5.75l-2.41 4.83 1.68.84 2.28-4.57a3 3 0 01-1.55-1.1zM14.43 5.75a3 3 0 01-1.55 1.1l2.28 4.57 1.68-.84z"
+                                        style="isolation:isolate" opacity=".55"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <label>Post a Job</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="left-content">
+            <div class="user-identity content-box">
+                <div class="identity-bg" style="background-image:url(assets/images/user-cover-img.jpeg)"></div>
+                <div class="identity-user">
+                    <img src="assets/images/user1.jpeg" alt="">
+                </div>
+                <div class="identity-detail content-box-padding">
+                    <h1>Minto Thomas</h1>
+                    <p>Founder at Cubexizsoft| Cofounder at Web Bureau | Software
+                        Developer | INDIA | UAE</p>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="identity-count content-box-padding">
+                    <div class="detail-count">
+                        <div class="item-name">Profile viewers</div>
+                        <div class="item-count">19</div>
+                    </div>
+                    <div class="detail-count">
+                        <div class="item-name">Post impressions</div>
+                        <div class="item-count">19</div>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="content-box-padding">
+                    <p>Access exclusive tools & insights</p>
+                    <div class="icon-section">
+                        <div class="icon">
+                            <svg id="Layer_1" enable-background="new 0 0 497 497" height="300" viewBox="0 0 497 497"
+                                width="300" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%"
+                                    transform="matrix(5.388445916248354e-17,0.88,-0.88,5.388445916248354e-17,467.18,29.819999999999993)">
+                                    <path
+                                        d="m477 497h-457c-11.046 0-20-8.954-20-20v-457c0-11.046 8.954-20 20-20h457c11.046 0 20 8.954 20 20v457c0 11.046-8.954 20-20 20z"
+                                        fill="#dda652" fill-opacity="1" data-original-color="#fdf49dff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="m10.467 494.586c-1.7-.924-3.252-2.087-4.609-3.444 1.357 1.357 2.909 2.521 4.609 3.444z"
+                                                fill="#dda652" fill-opacity="1" data-original-color="#fdf49dff"
+                                                stroke="none" stroke-opacity="1" />
+                                            <path
+                                                d="m14.053 496.101c-1.253-.39-2.452-.899-3.586-1.515 1.133.616 2.333 1.125 3.586 1.515z"
+                                                fill="#dda652" fill-opacity="1" data-original-color="#fdf49dff"
+                                                stroke="none" stroke-opacity="1" />
+                                            <path
+                                                d="m495.428 12.215c1.012 2.393 1.572 5.024 1.572 7.785 0-2.761-.56-5.392-1.572-7.785z"
+                                                fill="#b98032" fill-opacity="1" data-original-color="#6b78e3ff"
+                                                stroke="none" stroke-opacity="1" />
+                                            <path
+                                                d="m495.428 12.215c-1.02-2.395-2.448-4.514-4.286-6.357l-485.284 485.284c3.683 3.683 8.932 5.858 14.142 5.858h457c11.046 0 20-8.954 20-20v-457c0-2.761-.56-5.392-1.572-7.785z"
+                                                fill="#b98032" fill-opacity="1" data-original-color="#6b78e3ff"
+                                                stroke="none" stroke-opacity="1" />
+                                            <path
+                                                d="m495.428 12.215c-1.02-2.395-2.448-4.514-4.286-6.357l-34.142 34.142v437c0 11.046-8.954 20-20 20h40c11.046 0 20-8.954 20-20v-457c0-2.761-.56-5.392-1.572-7.785z"
+                                                fill="#b98032" fill-opacity="1" data-original-color="#616ccfff"
+                                                stroke="none" stroke-opacity="1" />
+                                        </g>
+                                        <g>
+                                            <path d="m100.705 497h105.679l250.616-245.368v-103.349z" fill="#b98032"
+                                                fill-opacity="1" data-original-color="#4f5ac2ff" stroke="none"
+                                                stroke-opacity="1" />
+                                            <path d="m457 251.632 40-39.163v-103.335l-40 39.149z" fill="#b98032"
+                                                fill-opacity="1" data-original-color="#434db8ff" stroke="none"
+                                                stroke-opacity="1" />
+                                            <path d="m311.839 497h105.604l39.557-38.675v-103.153z" fill="#b98032"
+                                                fill-opacity="1" data-original-color="#4f5ac2ff" stroke="none"
+                                                stroke-opacity="1" />
+                                            <path d="m457 458.325 40-39.108v-103.126l-40 39.081z" fill="#b98032"
+                                                fill-opacity="1" data-original-color="#434db8ff" stroke="none"
+                                                stroke-opacity="1" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="content">Try Sales Navigator</div>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="icon-section content-box-padding">
+                    <div class="icon">
+                        <svg id="svg8" height="300" viewBox="0 0 100.73046 145.34444" width="300"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.dev/svgjs">
+                            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                <g id="layer3" transform="translate(190.771 -17.639)">
+                                    <path id="icon-bookmark"
+                                        d="m-178.17904 17.638889h75.54742c6.954129 0 12.591549 5.637418 12.591549 12.591532v131.575629a1.1773628 1.1773628 0 0 1 -1.83315.97773l-46.316619-31.06337a3.977493 3.977493 0 0 0 -4.43094 0l-46.3166 31.06337a1.1773625 1.1773625 0 0 1 -1.83314-.97773v-131.575629c0-6.954114 5.63742-12.591532 12.59154-12.591532z"
+                                        fill="#484848" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="content">Saved items</div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-box-padding">
+                    <p class="group-label">Groups</p>
+                    <div class="icon-section">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="300" height="300"
+                                version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%"
+                                    transform="matrix(0.85,0,0,0.85,4.799999928474428,4.799394375085832)">
+                                    <path d="m43 61h-22v-33.5a10.5 10.5 0 0 1 10.5-10.5h1a10.5 10.5 0 0 1 10.5 10.5z"
+                                        fill="#363636" fill-opacity="1" data-original-color="#db735cff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <circle cx="10" cy="20" fill="#363636" r="5" fill-opacity="1"
+                                        data-original-color="#60a867ff" stroke="none" stroke-opacity="1" />
+                                    <path d="m10 25a7 7 0 0 1 7 7v29a0 0 0 0 1 0 0h-14a0 0 0 0 1 0 0v-29a7 7 0 0 1 7-7z"
+                                        fill="#363636" fill-opacity="1" data-original-color="#60a867ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <circle cx="54" cy="20" fill="#363636" r="5" fill-opacity="1"
+                                        data-original-color="#d3ac5cff" stroke="none" stroke-opacity="1" />
+                                    <path d="m54 25a7 7 0 0 1 7 7v29a0 0 0 0 1 0 0h-14a0 0 0 0 1 0 0v-29a7 7 0 0 1 7-7z"
+                                        fill="#363636" fill-opacity="1" data-original-color="#d3ac5cff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <circle cx="32" cy="10" fill="#363636" r="7" fill-opacity="1"
+                                        data-original-color="#db735cff" stroke="none" stroke-opacity="1" />
+                                    <path
+                                        d="m20 27.5v33.5a.99974.99974 0 0 0 1 1h22a.99974.99974 0 0 0 1-1v-33.5a11.50912 11.50912 0 0 0 -7.62164-10.81256 8 8 0 1 0 -8.75672 0 11.50912 11.50912 0 0 0 -7.62164 10.81256zm6-17.5a6 6 0 1 1 6 6 6.00657 6.00657 0 0 1 -6-6zm5.5 8h1a9.51081 9.51081 0 0 1 9.5 9.5v32.5h-20v-32.5a9.51081 9.51081 0 0 1 9.5-9.5z"
+                                        fill="#363636" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <path
+                                        d="m3 62h14a.99974.99974 0 0 0 1-1v-29a8.00188 8.00188 0 0 0 -4.46252-7.16455 6 6 0 1 0 -7.075 0 8.00188 8.00188 0 0 0 -4.46248 7.16455v29a.99974.99974 0 0 0 1 1zm3-42a4 4 0 1 1 4 4 4.00427 4.00427 0 0 1 -4-4zm-2 12a6 6 0 0 1 12 0v28h-12z"
+                                        fill="#363636" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <path
+                                        d="m57.53748 24.83545a6 6 0 1 0 -7.075 0 8.00188 8.00188 0 0 0 -4.46248 7.16455v29a.99974.99974 0 0 0 1 1h14a.99974.99974 0 0 0 1-1v-29a8.00188 8.00188 0 0 0 -4.46252-7.16455zm-7.53748-4.83545a4 4 0 1 1 4 4 4.00427 4.00427 0 0 1 -4-4zm10 40h-12v-28a6 6 0 0 1 12 0z"
+                                        fill="#363636" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="content">Growth School : Manageme...</div>
+                    </div>
+                    <div class="icon-section">
+                        <p class="group-label">Events</p>
+                        <div class="icon">
+                            <svg style="width:30px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                style="enable-background:new 0 0 512 512;" xml:space="preserve" width="300" height="300"
+                                xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%"
+                                    transform="matrix(1.42,0,0,1.42,-107.51999999999998,-107.51999999999998)">
+                                    <path style=""
+                                        d="M256,504C119.032,504,8,392.968,8,256S119.032,8,256,8s248,111.032,248,248&#10;&#9;C503.848,392.904,392.904,503.848,256,504z"
+                                        fill="#ffffff" fill-opacity="0" data-original-color="#ffffffff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <path
+                                        d="M256,16c132.552,0,240,107.448,240,240S388.552,496,256,496S16,388.552,16,256C16.152,123.512,123.512,16.152,256,16 M256,0&#10;&#9;C114.616,0,0,114.616,0,256s114.616,256,256,256s256-114.616,256-256S397.384,0,256,0z"
+                                        fill="#000000" fill-opacity="0" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <g>
+                                        <rect x="244" y="175.976" style="" width="24" height="160.08" fill="#313131"
+                                            fill-opacity="1" data-original-color="#e21b1bff" stroke="none"
+                                            stroke-opacity="1" />
+                                        <rect x="175.976" y="244" style="" width="160.08" height="24" fill="#313131"
+                                            fill-opacity="1" data-original-color="#e21b1bff" stroke="none"
+                                            stroke-opacity="1" />
+                                    </g>
+
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+                <div class="dicover-more">
+                    <p>Dicover More</p>
+                </div>
+            </div>
+        </div>
+        <div class="center-content">
+            <div class="new-post content-box  content-box-padding">
+                <div class="form-section">
+                    <img src="assets/images/user1.jpeg" alt="">
+                    <input type="text" placeholder="Start a post">
+                </div>
+                <div class="post-type">
+                    <div class="post-image">
+                        <svg fill="none" height="300" viewBox="0 0 24 24" width="300" xmlns="http://www.w3.org/2000/svg"
+                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.dev/svgjs">
+                            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                <path
+                                    d="m5 11.1 2-2 5.5 5.5 3.5-3.5 3 3v-9.1h-14zm-1-8.1h16c.2652 0 .5196.10536.7071.29289.1875.18754.2929.44189.2929.70711v16c0 .2652-.1054.5196-.2929.7071s-.4419.2929-.7071.2929h-16c-.26522 0-.51957-.1054-.70711-.2929-.18753-.1875-.29289-.4419-.29289-.7071v-16c0-.26522.10536-.51957.29289-.70711.18754-.18753.44189-.29289.70711-.29289zm11.5 7c-.3978 0-.7794-.15804-1.0607-.43934s-.4393-.66284-.4393-1.06066.158-.77936.4393-1.06066.6629-.43934 1.0607-.43934.7794.15804 1.0607.43934.4393.66284.4393 1.06066-.158.77936-.4393 1.06066-.6629.43934-1.0607.43934z"
+                                    fill="#357cde" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                    stroke-opacity="1" />
+                            </g>
+                        </svg>
+                        <span>Media</span>
+                    </div>
+                    <div class="post-event">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve" width="300" height="300"
+                            xmlns:svgjs="http://svgjs.dev/svgjs">
+                            <rect width="512" height="512" x="0" y="0" shape="true"
+                                transform="matrix(0.73,0,0,0.73,69.12,69.12)" fill-opacity="1" fill="#b98032" />
+                            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,10)">
+                                <circle style="" cx="256" cy="256" r="256" fill="#948fe1" fill-opacity="0"
+                                    data-original-color="#948fe1ff" stroke="none" stroke-opacity="1" />
+                                <path style=""
+                                    d="M512,256c0-20.831-2.506-41.073-7.201-60.461l-84.776-84.776h-21.274l-38.476-37.698h-42.561v37.698&#10;&#9;h-86.38l-37.045-37.698h-42.561v37.698H91.977v300.903l89.217,89.217C204.858,508.104,229.973,512,256,512&#10;&#9;C397.385,512,512,397.385,512,256z"
+                                    fill="#6e61b7" fill-opacity="0" data-original-color="#6e61b7ff" stroke="none"
+                                    stroke-opacity="1" />
+                                <rect x="91.98" y="168.61" style="" width="328.05" height="243.06" fill="#ffffff"
+                                    fill-opacity="1" data-original-color="#ffffffff" stroke="none" stroke-opacity="1" />
+                                <rect x="256" y="168.61" style="" width="164.02" height="243.06" fill="#ffffff"
+                                    fill-opacity="1" data-original-color="#fff5cbff" stroke="none" stroke-opacity="1" />
+                                <rect x="91.98" y="110.76" style="" width="328.05" height="66.15" fill="#b98032"
+                                    fill-opacity="1" data-original-color="#ff3980ff" stroke="none" stroke-opacity="1" />
+                                <rect x="256" y="110.76" style="" width="164.02" height="66.15" fill="#b98032"
+                                    fill-opacity="1" data-original-color="#e30a6cff" stroke="none" stroke-opacity="1" />
+                                <g>
+                                    <rect x="127.95" y="209.43" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00efd1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="127.95" y="272.16" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00efd1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="127.95" y="334.89" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00efd1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="199.33" y="209.43" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00efd1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="199.33" y="272.16" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00efd1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="199.33" y="334.89" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00efd1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                                <g>
+                                    <rect x="270.7" y="209.43" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00ceb4ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="270.7" y="272.16" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00ceb4ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="270.7" y="334.89" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00ceb4ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="342.07" y="209.43" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00ceb4ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="342.07" y="272.16" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00ceb4ff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <rect x="342.07" y="334.89" style="" width="41.974" height="41.974" fill="#b98032"
+                                        fill-opacity="1" data-original-color="#00ceb4ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                                <rect x="151.73" y="73.07" style="" width="42.561" height="73.27" fill="#ffffff"
+                                    fill-opacity="1" data-original-color="#ffffffff" stroke="none" stroke-opacity="1" />
+                                <rect x="317.71" y="73.07" style="" width="42.561" height="73.27" fill="#ffffff"
+                                    fill-opacity="1" data-original-color="#fff5cbff" stroke="none" stroke-opacity="1" />
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>Event</span>
+                    </div>
+                    <div class="post-article">
+                        <svg clip-rule="evenodd" fill-rule="evenodd" height="300" stroke-linejoin="round"
+                            stroke-miterlimit="2" viewBox="0 0 32 32" width="300" xmlns="http://www.w3.org/2000/svg"
+                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.dev/svgjs">
+                            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                <path id="path2462"
+                                    d="m5 3c-1.656 0-3 1.344-3 3v8c0 1.656 1.344 3 3 3h8c1.656 0 3-1.344 3-3v-8c0-1.656-1.344-3-3-3zm14 0c-.552 0-1 .448-1 1s.448 1 1 1h10c.552 0 1-.448 1-1s-.448-1-1-1zm-14 2h8c.552 0 1 .448 1 1v4.838l-4.553-2.733c-.281-.141-.613-.141-.894 0l-4.553 2.733v-4.838c0-.552.448-1 1-1zm14 2c-.552 0-1 .448-1 1s.448 1 1 1h10c.552 0 1-.448 1-1s-.448-1-1-1zm0 4c-.552 0-1 .448-1 1s.448 1 1 1h10c.552 0 1-.448 1-1s-.448-1-1-1zm0 4c-.552 0-1 .448-1 1s.448 1 1 1h10c.552 0 1-.448 1-1s-.448-1-1-1zm-16 4c-.553 0-1 .448-1 1s.447 1 1 1h26c.553 0 1-.448 1-1s-.447-1-1-1zm0 4c-.553 0-1 .448-1 1s.447 1 1 1h26c.553 0 1-.448 1-1s-.447-1-1-1zm0 4c-.553 0-1 .448-1 1s.447 1 1 1h26c.553 0 1-.448 1-1s-.447-1-1-1z"
+                                    fill="#d16f50" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                    stroke-opacity="1" />
+                            </g>
+                        </svg>
+                        <span>Write article</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="promoted-post-block">
+                    <div class="user-section ">
+                        <div class="logo">
+                            <img src="assets/images/post-logo-1.jpeg" alt="">
+                        </div>
+                        <div class="user-details">
+                            <h2>Gure</h2>
+                            <p>Promoted</p>
+                        </div>
+                        <div class="three-dot">
+                            <div class="dropdown" id="dropdown">
+                                <img class="svg-img" onclick="toggleDropdown('dropdown')"
+                                    src="assets/images/icon/three-dot.svg" alt="">
+                                <div class="dropdown-content">
+                                    <a href="#action1">
+                                        <img src="assets/images/icon/bookmark.svg" alt="">
+                                        <span>Save</span>
+                                    </a>
+                                    <a href="#action2">
+                                        <img src="assets/images/icon/copy-link.svg" alt="">
+                                        <span>Copy link to post</span>
+                                    </a>
+                                    <a href="#action3">
+                                        <img src="assets/images/icon/html.svg" alt="">
+                                        <span>Embed this post</span>
+                                    </a>
+                                    <a href="#action1">
+                                        <img src="assets/images/icon/flag.svg" alt="">
+                                        <span>Report post</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content ">
+                        <p>End repeat questions. AI Search across any app, doc, or chat & effortlessly build your
+                            company's collective knowledge.</p>
+                    </div>
+                    <img class="post-media" src="assets/images/post1.jpeg" alt="">
+                    <div class="post-link">
+                        <h3>See a 90 second demo</h3>
+                        <a>getguru.com</a>
+                    </div>
+                    <div class="action-section content-box-padding">
+                        <div class="action-block">
+                            <svg id="Layer_1" height="300" viewBox="0 0 32 32" width="300"
+                                xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(-1,0,0,1,31.999998092651367,0)">
+                                    <path
+                                        d="m31 24.024v-8.06a3.985 3.985 0 0 0 -3.99-3.97h-6.83a22.8 22.8 0 0 0 .46-3.481 6.915 6.915 0 0 0 -2.04-4.926 2.018 2.018 0 0 0 -3.061.271l-5.539 7.915a2.977 2.977 0 0 0 -2-.779h-4a3 3 0 0 0 -3 3v12a3 3 0 0 0 3 3l21.533-.021a5.165 5.165 0 0 0 5.467-4.949zm-21.995-10.03v12a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1-1v-12a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zm19.995 10.03a2.909 2.909 0 0 1 -1.152 2.33 3.821 3.821 0 0 1 -2.26.619l-14.762.018a2.949 2.949 0 0 0 .184-1v-12c0-.049-.012-.094-.014-.142l6.189-8.849a4.935 4.935 0 0 1 1.45 3.516 28.638 28.638 0 0 1 -.618 4.326 1.013 1.013 0 0 0 .988 1.155h8a1.982 1.982 0 0 1 1.995 1.967z"
+                                        fill="#000000" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Like</label>
+                        </div>
+                        <div class="action-block">
+                            <svg height="681pt" viewBox="-21 -43 681.33295 681" width="681pt"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m484.863281 594.214844c-11.058593 0-17.21875-4.960938-20.609375-9.898438-2.160156-3.148437-8.378906-14.492187 2.269532-28.464844 20.039062-26.296874 21.566406-71.277343 19.601562-98.4375h-358.859375c-70.175781 0-127.265625-57.089843-127.265625-127.265624v-204.214844c0-70.171875 57.089844-127.265625 127.265625-127.265625h384.144531c70.183594 0 127.273438 57.09375 127.273438 127.265625.128906 204.230468.039062 227.378906-.019532 230.5625h.007813c-2.289063 66.78125-21.460937 125.8125-55.429687 170.699218-28.808594 38.066407-62.246094 58.386719-83.929688 64.714844-5.566406 1.621094-10.347656 2.304688-14.449219 2.304688zm-357.597656-558.074219c-49.511719 0-89.796875 40.28125-89.796875 89.792969v204.214844c0 49.515624 40.285156 89.796874 89.796875 89.796874h375.578125c9.171875 0 16.992188 6.636719 18.484375 15.683594.484375 2.921875 9.269531 58.234375-6.632813 106.875 9.628907-6.75 20.601563-16.21875 31.5625-29.070312 23.539063-27.613282 52.1875-77.464844 54.964844-158.191406.109375-7.191407.027344-167.757813-.011718-229.292969 0-49.527344-40.28125-89.808594-89.800782-89.808594zm0 0" />
+                                <path
+                                    d="m472.886719 200.363281h-307.03125c-10.34375 0-18.730469-8.386719-18.730469-18.730469 0-10.347656 8.386719-18.738281 18.730469-18.738281h307.03125c10.351562 0 18.738281 8.390625 18.738281 18.738281 0 10.34375-8.386719 18.730469-18.738281 18.730469zm0 0" />
+                                <path
+                                    d="m472.886719 283.191406h-307.03125c-10.34375 0-18.730469-8.386718-18.730469-18.734375 0-10.34375 8.386719-18.738281 18.730469-18.738281h307.03125c10.351562 0 18.738281 8.394531 18.738281 18.738281 0 10.347657-8.386719 18.734375-18.738281 18.734375zm0 0" />
+                            </svg>
+                            <label>Comment</label>
+                        </div>
+                        <div class="action-block">
+                            <svg id="Layer_1" enable-background="new 0 0 24 24" height="300" viewBox="0 0 24 24"
+                                width="300" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(-1.5,0,0,1.5,30,-6)">
+                                    <path
+                                        d="m18 24h-12c-3.3 0-6-2.7-6-6v-12c0-3.3 2.7-6 6-6h12c3.3 0 6 2.7 6 6v12c0 3.3-2.7 6-6 6z"
+                                        fill="#caeaff" fill-opacity="0" data-original-color="#caeaffff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <path
+                                        d="m8.7 7.6h8.2c.3 0 .6.2.6.6v3.8h-1.1v-3.3h-7.7v1.7l-2.7-2.2 2.7-2.2zm6.6 8.8h-8.2c-.3 0-.6-.2-.6-.6v-3.8h1.1v3.3h7.7v-1.7l2.7 2.2-2.7 2.2z"
+                                        fill="#3d3d3d" fill-opacity="1" data-original-color="#379df1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Repost</label>
+                        </div>
+                        <div class="action-block">
+                            <svg id="Layer_1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                data-name="Layer 1" width="300" height="300" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                    <path d="m94.59 3-91.59 28.39 41.01 22.2 7.87-7.88z" fill="#000000" fill-opacity="1"
+                                        data-original-color="#000000ff" stroke="none" stroke-opacity="1" />
+                                    <path d="m47.14 55.26-.73.73 22.2 41.01 28.39-91.6z" fill="#000000" fill-opacity="1"
+                                        data-original-color="#000000ff" stroke="none" stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Send</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="promoted-post-block">
+                    <div class="user-section ">
+                        <div class="logo">
+                            <img src="assets/images/post-logo-2.jpeg" alt="">
+                        </div>
+                        <div class="user-details">
+                            <h2>MasterCamp</h2>
+                            <p>4,496 followers</p>
+                            <p>Promoted</p>
+                        </div>
+                        <div class="three-dot">
+                            <div class="dropdown" id="dropdown1">
+                                <img class="svg-img" onclick="toggleDropdown('dropdown1')"
+                                    src="assets/images/icon/three-dot.svg" alt="">
+                                <div class="dropdown-content">
+                                    <a href="#action1">
+                                        <img src="assets/images/icon/bookmark.svg" alt="">
+                                        <span>Save</span>
+                                    </a>
+                                    <a href="#action2">
+                                        <img src="assets/images/icon/copy-link.svg" alt="">
+                                        <span>Copy link to post</span>
+                                    </a>
+                                    <a href="#action3">
+                                        <img src="assets/images/icon/html.svg" alt="">
+                                        <span>Embed this post</span>
+                                    </a>
+                                    <a href="#action1">
+                                        <img src="assets/images/icon/flag.svg" alt="">
+                                        <span>Report post</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content ">
+                        <p>
+                            Hire Now with Zero Costs! | Immediate Joiners Available
+                        </p>
+                    </div>
+                    <img class="post-media" src="assets/images/post3.jpeg" alt="">
+                    <div class="post-link">
+                        <h3>Your ZERO COST recruitment partner</h3>
+                        <a>6,519 submits</a>
+                    </div>
+                    <div class="action-section content-box-padding">
+                        <div class="action-block">
+                            <svg id="Layer_1" height="300" viewBox="0 0 32 32" width="300"
+                                xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(-1,0,0,1,31.999998092651367,0)">
+                                    <path
+                                        d="m31 24.024v-8.06a3.985 3.985 0 0 0 -3.99-3.97h-6.83a22.8 22.8 0 0 0 .46-3.481 6.915 6.915 0 0 0 -2.04-4.926 2.018 2.018 0 0 0 -3.061.271l-5.539 7.915a2.977 2.977 0 0 0 -2-.779h-4a3 3 0 0 0 -3 3v12a3 3 0 0 0 3 3l21.533-.021a5.165 5.165 0 0 0 5.467-4.949zm-21.995-10.03v12a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1-1v-12a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zm19.995 10.03a2.909 2.909 0 0 1 -1.152 2.33 3.821 3.821 0 0 1 -2.26.619l-14.762.018a2.949 2.949 0 0 0 .184-1v-12c0-.049-.012-.094-.014-.142l6.189-8.849a4.935 4.935 0 0 1 1.45 3.516 28.638 28.638 0 0 1 -.618 4.326 1.013 1.013 0 0 0 .988 1.155h8a1.982 1.982 0 0 1 1.995 1.967z"
+                                        fill="#000000" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Like</label>
+                        </div>
+                        <div class="action-block">
+                            <svg height="681pt" viewBox="-21 -43 681.33295 681" width="681pt"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m484.863281 594.214844c-11.058593 0-17.21875-4.960938-20.609375-9.898438-2.160156-3.148437-8.378906-14.492187 2.269532-28.464844 20.039062-26.296874 21.566406-71.277343 19.601562-98.4375h-358.859375c-70.175781 0-127.265625-57.089843-127.265625-127.265624v-204.214844c0-70.171875 57.089844-127.265625 127.265625-127.265625h384.144531c70.183594 0 127.273438 57.09375 127.273438 127.265625.128906 204.230468.039062 227.378906-.019532 230.5625h.007813c-2.289063 66.78125-21.460937 125.8125-55.429687 170.699218-28.808594 38.066407-62.246094 58.386719-83.929688 64.714844-5.566406 1.621094-10.347656 2.304688-14.449219 2.304688zm-357.597656-558.074219c-49.511719 0-89.796875 40.28125-89.796875 89.792969v204.214844c0 49.515624 40.285156 89.796874 89.796875 89.796874h375.578125c9.171875 0 16.992188 6.636719 18.484375 15.683594.484375 2.921875 9.269531 58.234375-6.632813 106.875 9.628907-6.75 20.601563-16.21875 31.5625-29.070312 23.539063-27.613282 52.1875-77.464844 54.964844-158.191406.109375-7.191407.027344-167.757813-.011718-229.292969 0-49.527344-40.28125-89.808594-89.800782-89.808594zm0 0" />
+                                <path
+                                    d="m472.886719 200.363281h-307.03125c-10.34375 0-18.730469-8.386719-18.730469-18.730469 0-10.347656 8.386719-18.738281 18.730469-18.738281h307.03125c10.351562 0 18.738281 8.390625 18.738281 18.738281 0 10.34375-8.386719 18.730469-18.738281 18.730469zm0 0" />
+                                <path
+                                    d="m472.886719 283.191406h-307.03125c-10.34375 0-18.730469-8.386718-18.730469-18.734375 0-10.34375 8.386719-18.738281 18.730469-18.738281h307.03125c10.351562 0 18.738281 8.394531 18.738281 18.738281 0 10.347657-8.386719 18.734375-18.738281 18.734375zm0 0" />
+                            </svg>
+                            <label>Comment</label>
+                        </div>
+                        <div class="action-block">
+                            <svg id="Layer_1" enable-background="new 0 0 24 24" height="300" viewBox="0 0 24 24"
+                                width="300" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(-1.5,0,0,1.5,30,-6)">
+                                    <path
+                                        d="m18 24h-12c-3.3 0-6-2.7-6-6v-12c0-3.3 2.7-6 6-6h12c3.3 0 6 2.7 6 6v12c0 3.3-2.7 6-6 6z"
+                                        fill="#caeaff" fill-opacity="0" data-original-color="#caeaffff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <path
+                                        d="m8.7 7.6h8.2c.3 0 .6.2.6.6v3.8h-1.1v-3.3h-7.7v1.7l-2.7-2.2 2.7-2.2zm6.6 8.8h-8.2c-.3 0-.6-.2-.6-.6v-3.8h1.1v3.3h7.7v-1.7l2.7 2.2-2.7 2.2z"
+                                        fill="#3d3d3d" fill-opacity="1" data-original-color="#379df1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Repost</label>
+                        </div>
+                        <div class="action-block">
+                            <svg id="Layer_1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                data-name="Layer 1" width="300" height="300" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                    <path d="m94.59 3-91.59 28.39 41.01 22.2 7.87-7.88z" fill="#000000" fill-opacity="1"
+                                        data-original-color="#000000ff" stroke="none" stroke-opacity="1" />
+                                    <path d="m47.14 55.26-.73.73 22.2 41.01 28.39-91.6z" fill="#000000" fill-opacity="1"
+                                        data-original-color="#000000ff" stroke="none" stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Send</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="re-post-block">
+                    <div class="repost-note">
+                        <div class="logo">
+                            <img src="assets/images/post-user-1.jpeg" alt="">
+                        </div>
+                        <div class="user-details">
+                            <p>Abdul’s profile photo
+                                Abdul Rehuman reposted this</p>
+                        </div>
+                        <div class="three-dot">
+                            <div class="dropdown" id="dropdown2">
+                                <img class="svg-img" onclick="toggleDropdown('dropdown2')"
+                                    src="assets/images/icon/three-dot.svg" alt="">
+                                <div class="dropdown-content">
+                                    <a href="#action1">
+                                        <img src="assets/images/icon/bookmark.svg" alt="">
+                                        <span>Save</span>
+                                    </a>
+                                    <a href="#action2">
+                                        <img src="assets/images/icon/copy-link.svg" alt="">
+                                        <span>Copy link to post</span>
+                                    </a>
+                                    <a href="#action3">
+                                        <img src="assets/images/icon/html.svg" alt="">
+                                        <span>Embed this post</span>
+                                    </a>
+                                    <a href="#action1">
+                                        <img src="assets/images/icon/flag.svg" alt="">
+                                        <span>Report post</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-divider"></div>
+                    <div class="user-section ">
+                        <div class="logo">
+                            <img src="assets/images/post-user-2.jpeg" alt="">
+                        </div>
+                        <div class="user-details">
+                            <h2>Joel Kuruvachira
+                                • 2nd</h2>
+                            <p>Head of Corporate Relations at Brototype</p>
+                            <p>3mo •</p>
+                        </div>
+                    </div>
+                    <div class="post-content ">
+                        <p>
+                            Hire Now with Zero Costs! | Immediate Joiners Available
+                        </p>
+                    </div>
+                    <img class="post-media" src="assets/images/post2.jpeg" alt="">
+                    <div class="post-link">
+                        <h3>Your ZERO COST recruitment partner</h3>
+                        <a>6,519 submits</a>
+                    </div>
+                    <div class="action-section content-box-padding">
+                        <div class="action-block">
+                            <svg id="Layer_1" height="300" viewBox="0 0 32 32" width="300"
+                                xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(-1,0,0,1,31.999998092651367,0)">
+                                    <path
+                                        d="m31 24.024v-8.06a3.985 3.985 0 0 0 -3.99-3.97h-6.83a22.8 22.8 0 0 0 .46-3.481 6.915 6.915 0 0 0 -2.04-4.926 2.018 2.018 0 0 0 -3.061.271l-5.539 7.915a2.977 2.977 0 0 0 -2-.779h-4a3 3 0 0 0 -3 3v12a3 3 0 0 0 3 3l21.533-.021a5.165 5.165 0 0 0 5.467-4.949zm-21.995-10.03v12a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1-1v-12a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1zm19.995 10.03a2.909 2.909 0 0 1 -1.152 2.33 3.821 3.821 0 0 1 -2.26.619l-14.762.018a2.949 2.949 0 0 0 .184-1v-12c0-.049-.012-.094-.014-.142l6.189-8.849a4.935 4.935 0 0 1 1.45 3.516 28.638 28.638 0 0 1 -.618 4.326 1.013 1.013 0 0 0 .988 1.155h8a1.982 1.982 0 0 1 1.995 1.967z"
+                                        fill="#000000" fill-opacity="1" data-original-color="#000000ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Like</label>
+                        </div>
+                        <div class="action-block">
+                            <svg height="681pt" viewBox="-21 -43 681.33295 681" width="681pt"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m484.863281 594.214844c-11.058593 0-17.21875-4.960938-20.609375-9.898438-2.160156-3.148437-8.378906-14.492187 2.269532-28.464844 20.039062-26.296874 21.566406-71.277343 19.601562-98.4375h-358.859375c-70.175781 0-127.265625-57.089843-127.265625-127.265624v-204.214844c0-70.171875 57.089844-127.265625 127.265625-127.265625h384.144531c70.183594 0 127.273438 57.09375 127.273438 127.265625.128906 204.230468.039062 227.378906-.019532 230.5625h.007813c-2.289063 66.78125-21.460937 125.8125-55.429687 170.699218-28.808594 38.066407-62.246094 58.386719-83.929688 64.714844-5.566406 1.621094-10.347656 2.304688-14.449219 2.304688zm-357.597656-558.074219c-49.511719 0-89.796875 40.28125-89.796875 89.792969v204.214844c0 49.515624 40.285156 89.796874 89.796875 89.796874h375.578125c9.171875 0 16.992188 6.636719 18.484375 15.683594.484375 2.921875 9.269531 58.234375-6.632813 106.875 9.628907-6.75 20.601563-16.21875 31.5625-29.070312 23.539063-27.613282 52.1875-77.464844 54.964844-158.191406.109375-7.191407.027344-167.757813-.011718-229.292969 0-49.527344-40.28125-89.808594-89.800782-89.808594zm0 0" />
+                                <path
+                                    d="m472.886719 200.363281h-307.03125c-10.34375 0-18.730469-8.386719-18.730469-18.730469 0-10.347656 8.386719-18.738281 18.730469-18.738281h307.03125c10.351562 0 18.738281 8.390625 18.738281 18.738281 0 10.34375-8.386719 18.730469-18.738281 18.730469zm0 0" />
+                                <path
+                                    d="m472.886719 283.191406h-307.03125c-10.34375 0-18.730469-8.386718-18.730469-18.734375 0-10.34375 8.386719-18.738281 18.730469-18.738281h307.03125c10.351562 0 18.738281 8.394531 18.738281 18.738281 0 10.347657-8.386719 18.734375-18.738281 18.734375zm0 0" />
+                            </svg>
+                            <label>Comment</label>
+                        </div>
+                        <div class="action-block">
+                            <svg id="Layer_1" enable-background="new 0 0 24 24" height="300" viewBox="0 0 24 24"
+                                width="300" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(-1.5,0,0,1.5,30,-6)">
+                                    <path
+                                        d="m18 24h-12c-3.3 0-6-2.7-6-6v-12c0-3.3 2.7-6 6-6h12c3.3 0 6 2.7 6 6v12c0 3.3-2.7 6-6 6z"
+                                        fill="#caeaff" fill-opacity="0" data-original-color="#caeaffff" stroke="none"
+                                        stroke-opacity="1" />
+                                    <path
+                                        d="m8.7 7.6h8.2c.3 0 .6.2.6.6v3.8h-1.1v-3.3h-7.7v1.7l-2.7-2.2 2.7-2.2zm6.6 8.8h-8.2c-.3 0-.6-.2-.6-.6v-3.8h1.1v3.3h7.7v-1.7l2.7 2.2-2.7 2.2z"
+                                        fill="#3d3d3d" fill-opacity="1" data-original-color="#379df1ff" stroke="none"
+                                        stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Repost</label>
+                        </div>
+                        <div class="action-block">
+                            <svg id="Layer_1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                data-name="Layer 1" width="300" height="300" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
+                                <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                    <path d="m94.59 3-91.59 28.39 41.01 22.2 7.87-7.88z" fill="#000000" fill-opacity="1"
+                                        data-original-color="#000000ff" stroke="none" stroke-opacity="1" />
+                                    <path d="m47.14 55.26-.73.73 22.2 41.01 28.39-91.6z" fill="#000000" fill-opacity="1"
+                                        data-original-color="#000000ff" stroke="none" stroke-opacity="1" />
+                                </g>
+                            </svg>
+                            <label>Send</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="content-box  content-box-padding">
+                <div class="trends">
+                    <div class="heading">
+                        <h1>Trending Now</h1>
+                        <svg fill="none" height="312" viewBox="0 0 312 312" width="312"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <clipPath id="clip0_16_18">
+                                <path d="m0 0h312v312h-312z" />
+                            </clipPath>
+                            <g clip-path="url(#clip0_16_18)">
+                                <rect fill="#000" height="312" rx="80" width="312" />
+                                <path
+                                    d="m156.296 107.548c-4.779-.17-8.619-1.621-11.52-4.352-2.901-2.73-4.352-6.5705-4.352-11.5198.171-5.2907 1.963-9.5573 5.376-12.8 3.413-3.4133 7.765-5.0347 13.056-4.864 4.949.1707 8.789 1.6213 11.52 4.352 2.901 2.7307 4.267 6.5707 4.096 11.52-.171 5.12-1.877 9.3867-5.12 12.7998-3.243 3.243-7.595 4.864-13.056 4.864zm.256 129.792c-5.12 0-9.131-1.365-12.032-4.096-2.901-2.901-4.352-7.765-4.352-14.592 0-3.925.341-7.765 1.024-11.52.853-3.754 1.792-7.424 2.816-11.008 1.195-3.754 2.133-7.594 2.816-11.52.853-3.925 1.28-8.106 1.28-12.544 0-3.072-.427-5.973-1.28-8.704-.853-2.901-2.731-5.034-5.632-6.4-2.219-1.194-4.181-2.389-5.888-3.584-1.536-1.365-2.304-3.072-2.304-5.12 0-2.389 1.109-4.949 3.328-7.68 2.219-2.73 5.12-5.034 8.704-6.912 3.755-2.048 7.595-3.072 11.52-3.072 4.267 0 7.339 1.11 9.216 3.328 2.048 2.219 3.413 5.035 4.096 8.448.683 3.414 1.024 6.912 1.024 10.496 0 5.462-.427 10.838-1.28 16.128-.853 5.12-1.707 9.899-2.56 14.336-.683 3.243-1.195 6.23-1.536 8.96-.341 2.731-.512 5.291-.512 7.68 0 4.267 1.024 7.51 3.072 9.728 2.048 2.048 4.949 4.011 8.704 5.888 1.536.854 2.304 2.134 2.304 3.84 0 1.366-.683 3.499-2.048 6.4-1.365 2.902-3.755 5.547-7.168 7.936-3.243 2.39-7.68 3.584-13.312 3.584z"
+                                    fill="#fff" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h2>curated by LinkedIn News</h2>
+                    <div class="news-box">
+                        <h3 class="title">Big Ideas 2025</h3>
+                        <p class="reach">2d ago • 20,627 readers</p>
+                    </div>
+                    <div class="news-box">
+                        <h3 class="title">Big ideas in tech, finance, and retail</h3>
+                        <p class="reach">23h ago • 10,067 readers</p>
+                    </div>
+                    <div class="news-box">
+                        <h3 class="title">Fresher hiring</h3>
+                        <p class="reach">19h ago • 2,572 readers</p>
+                    </div>
+                    <div class="news-box">
+                        <h3 class="title">Merger and acquisition deals</h3>
+                        <p class="reach">19h ago • 1,065 readers</p>
+                    </div>
+                    <div class="news-box">
+                        <h3 class="title">Hospitality sector</h3>
+                        <p class="reach">19h ago • 744 readers</p>
+                    </div>
+                    <div class="news-box show-more">
+                        <h3 class="title">Show More</h3>
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" width="300" height="300"
+                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xmlns:svgjs="http://svgjs.dev/svgjs">
+                            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)">
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1_copy_2" data-name="Layer 1 copy 2">
+                                        <g id="_127" data-name="127">
+                                            <rect id="background" fill="#099924" height="512" rx="127.32" width="512"
+                                                fill-opacity="0" data-original-color="#099924ff" stroke="none"
+                                                stroke-opacity="1" />
+                                            <path
+                                                d="m407.52 174.83a15.3 15.3 0 0 0 -21.63 0l-129.89 129.89-129.89-129.89a15.29 15.29 0 0 0 -21.63 21.63l140.71 140.71a15.28 15.28 0 0 0 21.62 0l140.71-140.71a15.3 15.3 0 0 0 0-21.63z"
+                                                fill="#313131" fill-opacity="1" data-original-color="#ffffffff"
+                                                stroke="none" stroke-opacity="1" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="position-sticky">
+                <div class="ad-image">
+                    <img src="assets/images/ad-image.png" alt="">
+                </div>
+                <div class="quick-access">
+                    <ul>
+                        <li>About</li>
+                        <li>Accessibility</li>
+                        <li>Privacy & Terms</li>
+                        <li>Help Center</li>
+                        <li>Ad Choices</li>
+                        <li>Advertising</li>
+                        <li>Business Services</li>
+                        <li>Get the LinkedIn app</li>
+                        <li>More</li>
+                    </ul>
+                    <img src="assets/images/linkedin-full.svg" alt=""> LinkedIn Corporation © 2024
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
