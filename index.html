@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linked In</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
@@ -81,10 +82,51 @@
                         <label>Notifications</label>
                     </li>
                     <li>
-                        <div class="icon">
-                            <img src="assets/images/user1.jpeg" class="user-icon" alt="">
+                        <div>
+                            <div class="dropdown" id="dropdown-menu-me">
+                                <div onclick="toggleDropdown('dropdown-menu-me')">
+                                    <div class="icon">
+                                        <img src="assets/images/user1.jpeg" class="user-icon" alt="">
+                                    </div>
+                                    <label>Me <i class="fa fa-caret-down"></i></label>
+                                </div>
+                                <div class="dropdown-content">
+                                    <div class="content-box-padding">
+                                        <div class="user-details">
+                                            <div class="icon">
+                                                <img src="assets/images/user1.jpeg" class="user-icon" alt="">
+                                            </div>
+                                            <div class="cuser-content">
+                                                <strong>Minto Thomas</strong>
+                                                <p>Founder at Cubexizsoft | Co-founder at Web Bureau | Software
+                                                    Developer |
+                                                    INDIA | UAE</p>
+                                            </div>
+                                        </div>
+                                        <button class="menu-btn">View Profile</button>
+                                    </div>
+                                    <div class="horizontal-divider"></div>
+                                    <div class="content-box-padding">
+                                        <strong>Account</strong>
+                                        <p>Try 1 month of Premium for ₹0</p>
+                                        <p>Settings & Privacy</p>
+                                        <p>Help</p>
+                                        <p>Language</p>
+                                    </div>
+                                    <div class="horizontal-divider"></div>
+
+                                    <div class="content-box-padding">
+                                        <strong>Manage</strong>
+                                        <p>Posts & Activity</p>
+                                        <p>Job Posting Account</p>
+                                        <p>Sign Out</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <label>Me <i class="fa fa-caret-down"></i></label>
+
+
+
                     </li>
                 </ul>
                 <div class="vertical-divider"></div>
