@@ -132,6 +132,67 @@ button.menu-btn {
     margin-top: 20px;
 }
 
+.menu-for-business {
+    width: 600px;
+    display: flex;
+}
+
+.menu-for-business .left-content-business,
+.menu-for-business .right-content-business {
+    text-align: left;
+    width: 50%;
+}
+
+#dropdown-menu-business {}
+
+#dropdown-menu-business .heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+#dropdown-menu-business .icon img {
+    width: 35px;
+}
+
+#dropdown-menu-business .content {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#dropdown-menu-business .icon-section {
+    margin: 20px;
+}
+
+#dropdown-menu-business p {
+    margin: 20px;
+    font-size: 16px;
+}
+
+#dropdown-menu-business .vertical-divider::after {
+    height: unset;
+    top: 30px;
+    bottom: 30px;
+}
+
+#dropdown-menu-business .right-content-business .icon-section {
+    margin: 40px 20px;
+    display: block;
+}
+
+#dropdown-menu-business .right-content-business p {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.right-content-business .content {
+    display: flex;
+    align-items: center;
+}
+
+.right-content-business .content svg {
+    height: unset;
+}
 
 .nav-right li .user-icon {
     width: 25px;
